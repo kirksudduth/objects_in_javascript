@@ -100,3 +100,29 @@ console.log(
   empireStateBuilding[cost],
   empireStateBuilding[architect]
 );
+
+const nashville_software_school = {
+  founded: 2012,
+  director: "John Wark",
+  instructors: {
+    full_time: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
+    part_time: ["Zoe", "Nathan"],
+  },
+  address: "500 Interstate Blvd. S",
+};
+
+const part_time = nashville_software_school.instructors.part_time;
+const full_time = nashville_software_school.instructors.full_time;
+
+for (let i = 0; i < part_time.length; i++) {
+  console.log(part_time[i]);
+}
+
+for (let i = 0; i < full_time.length; i++) {
+  console.log(full_time[i]);
+}
+
+console.log(
+  nashville_software_school.instructors.full_time[4],
+  nashville_software_school.instructors.part_time[0]
+);
